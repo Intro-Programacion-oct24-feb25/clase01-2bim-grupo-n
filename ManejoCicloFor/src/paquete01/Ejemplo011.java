@@ -18,7 +18,7 @@ public class Ejemplo011 {
         
         for (int i = 10; i >= 0; i--) {
 
-            System.out.printf("El resultado de la serie es: %d\n", i);
+            System.out.printf("Serie:%d\n", i); // hola
 
         }
         
