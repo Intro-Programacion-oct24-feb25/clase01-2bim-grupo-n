@@ -5,6 +5,8 @@
  */
 package Paquete05;
 
+import java.util.Locale;
+import java.util.Scanner;
 import paquete01.*;
 
 /**
@@ -18,12 +20,22 @@ public class EjemploTablas {
      */
     public static void main(String[] args) {
         
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+        
         int numero = 1;
         int numero2 = 1;
-        int limite = 4;
+        int limite;
+        int limite2;
         
-        while (numero2 <=3){
-            while(numero <= limite) {
+        System.out.println("Ingrese el numero de la tablas a generar:");
+        limite = entrada.nextInt();
+        
+        System.out.println("Ingrese el limite:");
+        limite2 = entrada.nextInt();
+        
+        while (numero2 <= limite){
+            while(numero <= limite2) {
                 System.out.println(numero2 + " * " + numero + " = " 
                         + numero2 * numero);
                 numero = numero + 1;
